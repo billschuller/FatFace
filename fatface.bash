@@ -66,7 +66,11 @@ for P in `ls *.jpg`; do
 		u=_
 		c=cropped
 		echo "      $fH$m$fW$a$fX$a$fY"
-		convert $P -crop $fH$m$fW$a$fX$a$fY +repage $P$u${names[idx]}$u$c.jpg
+		if [ ${names[idx]}=="BillSchuller" ];then
+			convert $P -crop $fH$m$fW$a$fX$a$fY +repage 240x240 -pointsize 16 -fill black -gravity southeast -annotate +10+5 "230"   $P$u${names[idx]}$u$c.jpg
+		else
+			convert $P -crop $fH$m$fW$a$fX$a$fY +repage 240x240 $P$u${names[idx]}$u$c.jpg
+		fi
 		((idx++))
 	done
 done
