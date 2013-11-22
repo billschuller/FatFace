@@ -16,14 +16,11 @@ Edit fatface.bash to adjust the weight units, font size and output resolution of
 
 Status
 =======
-Features that have been implemented
-1. Face region extraction - xmp-mp region support, tested with photos containing 2 faces. 
-2. Extract the "Creation Date" from exif metadata of each photo and extract the exactly corresponding date from user.csv to obtain weight. If the exact date is not in the user.csv file, NULL will be overlayed.
-3. Output a photo extract of each face region described in the input photos metadata in a standard size.
-4. Overlay weight and date onto photo.
-
-Features that need to be implemented
-1. Better styling on overlay
-2. Extract last known weight for photos that do not have an exact date match.
-3. Video stitching.
-4. Sparkline overlay option
+- [X] Face region extraction - xmp-mp region support, tested with photos containing 2 faces. 
+- [X] Extract the "Creation Date" from exif metadata of each photo and extract the exactly corresponding date from user.csv to obtain weight. If the exact date is not in the user.csv file, NULL will be overlayed.
+- [X] Output a photo extract of each face region described in the input photos metadata in a standard size.
+- [X] Overlay weight and date onto photo.
+- [ ] Better styling on overlay
+- [ ] Extract last known weight for photos that do not have an exact date match.
+- [ ] Video stitching.
+- [ ] Sparkline overlay option
